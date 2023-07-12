@@ -35,8 +35,9 @@ ul {
      object-fit: contain;
 }
 .sec-title .title {
-  font-size: 40px;
+  font-size: 30px;
   color: rgb(15, 23, 42) !important;
+  text-align: center;
 }
 .sec-title .title span {
   color: rgb(109, 40, 217) !important;
@@ -181,54 +182,52 @@ ul {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
+  gap: 4%;
 }
 .modules .container .modules-wrapper .modules-main-content .modules-img {
-  flex-basis: calc(50% - 20px);
-  flex-grow: 1;
+  flex-basis: 46%;
   height: 100%;
   width: 100%;
 }
 .modules .container .modules-wrapper .modules-main-content .modules-img .img {
   height: 100%;
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .modules .container .modules-wrapper .modules-main-content .modules-content {
-  flex-basis: calc(50% - 20px);
-  flex-grow: 1;
-}
-.modules .container .modules-wrapper .modules-main-content .modules-content .modules-content-scroller {
-  max-height: 350px;
-  width: 100%;
+  flex-basis: 46%;
   overflow-y: scroll;
-  overflow-x: hidden;
+  overflow-x: scroll;
 }
-.modules .container .modules-wrapper .modules-main-content .modules-content .modules-content-scroller::-webkit-scrollbar {
+.modules .container .modules-wrapper .modules-main-content .modules-content::-webkit-scrollbar {
   width: 8px;
+  height: 8px;
 }
-.modules .container .modules-wrapper .modules-main-content .modules-content .modules-content-scroller::-webkit-scrollbar-track {
+.modules .container .modules-wrapper .modules-main-content .modules-content::-webkit-scrollbar-track {
   border-radius: 5px;
 }
-.modules .container .modules-wrapper .modules-main-content .modules-content .modules-content-scroller::-webkit-scrollbar-thumb {
+.modules .container .modules-wrapper .modules-main-content .modules-content::-webkit-scrollbar-thumb {
   background: rgb(203, 213, 225);
   border-radius: 5px;
   height: 50px;
 }
-.modules .container .modules-wrapper .modules-main-content .modules-content .modules-content-scroller::-webkit-scrollbar-thumb:hover {
+.modules .container .modules-wrapper .modules-main-content .modules-content::-webkit-scrollbar-thumb:hover {
   background: rgba(0, 0, 0, 0.4);
 }
+.modules .container .modules-wrapper .modules-main-content .modules-content .modules-content-scroller {
+  height: 350px;
+  width: 100%;
+}
 .modules .container .modules-wrapper .modules-main-content .modules-content .modules-content-scroller .modules-content-item {
-  display: flex;
-  align-items: start;
-  justify-content: start;
   gap: 30px;
   position: relative;
   padding-bottom: 20px;
 }
 .modules .container .modules-wrapper .modules-main-content .modules-content .modules-content-scroller .modules-content-item .module-item-number {
-  flex-basis: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -237,13 +236,12 @@ ul {
   border-radius: 100%;
   background: rgb(121, 80, 242);
   color: rgb(255, 255, 255);
-  margin-top: 6px;
 }
 .modules .container .modules-wrapper .modules-main-content .modules-content .modules-content-scroller .modules-content-item .module-item-number .nm {
   font-size: 18px;
 }
 .modules .container .modules-wrapper .modules-main-content .modules-content .modules-content-scroller .modules-content-item .module-item-content {
-  flex: 1 0 80%;
+  margin-left: 35px;
 }
 .modules .container .modules-wrapper .modules-main-content .modules-content .modules-content-scroller .modules-content-item .module-item-content .item-title {
   font-size: 18px;
@@ -269,6 +267,7 @@ ul {
   border-radius: 15px;
   border: 1px solid rgb(121, 80, 242);
   height: 25px;
+  white-space: nowrap;
 }
 .modules .container .modules-wrapper .modules-main-content .modules-content .modules-content-scroller .modules-content-item .module-item-content .item-ds {
   font-size: 15px;
@@ -296,6 +295,13 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  .features .container .features-wrapper {
+    margin: 50px 0 0 0;
+    padding: 20px;
+  }
   .features .container .features-wrapper .inner-features .feature {
     flex-basis: 100%;
   }
@@ -321,10 +327,8 @@ ul {
   }
   .modules .container .modules-wrapper .modules-main-content .modules-img {
     flex-basis: 100%;
-    flex-grow: 1;
   }
   .modules .container .modules-wrapper .modules-main-content .modules-content {
     flex-basis: 100%;
-    flex-grow: 1;
   }
 }/*# sourceMappingURL=style.css.map */
