@@ -372,8 +372,71 @@ ul {
     }
 }
 
-
-
+// projects section style
+.projects{
+    .container{
+        .main-projects{
+            margin-top: 60px;
+            .main-projects-container{
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 10px;
+                
+                .project-item{
+                    flex-basis: calc(50% - 5px);
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    >.img{
+                        width: 100%;
+                        height: 100%;
+                        margin-bottom: -8px;
+                        transition: .3s all;
+                    }
+                    .inner-project-container{
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        gap: 10px;
+                        .inner-project-item{ 
+                            flex-basis: calc(50% - 5px);
+                            width: 100%;
+                            height: 100%;
+                            vertical-align: middle;
+                            overflow: hidden;
+                            border-radius: 10px;
+                            >.img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                margin-bottom: -8px;
+                                transition: .3s all;
+                            }
+                            &:hover{
+                                .img{
+                                    transform: scale(1.05);
+                                }
+                            }
+                        }
+                    }
+                    
+                    &:hover{
+                        >.img{
+                            transform: scale(1.05);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
@@ -449,4 +512,20 @@ ul {
         }
     }
     
+
+    // projects section
+    .projects{
+        .container{
+            .main-projects{
+                .main-projects-container{
+                    width: 100%;
+                    min-height: 370px;
+                    
+                    .project-item{
+                        flex-basis: 100%;
+                    }
+                }
+            }
+        }
+    }
 }

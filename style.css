@@ -294,6 +294,62 @@ ul {
   z-index: -1;
 }
 
+.projects .container .main-projects {
+  margin-top: 60px;
+}
+.projects .container .main-projects .main-projects-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.projects .container .main-projects .main-projects-container .project-item {
+  flex-basis: calc(50% - 5px);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.projects .container .main-projects .main-projects-container .project-item > .img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: -8px;
+  transition: 0.3s all;
+}
+.projects .container .main-projects .main-projects-container .project-item .inner-project-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.projects .container .main-projects .main-projects-container .project-item .inner-project-container .inner-project-item {
+  flex-basis: calc(50% - 5px);
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.projects .container .main-projects .main-projects-container .project-item .inner-project-container .inner-project-item > .img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: -8px;
+  transition: 0.3s all;
+}
+.projects .container .main-projects .main-projects-container .project-item .inner-project-container .inner-project-item:hover .img {
+  transform: scale(1.05);
+}
+.projects .container .main-projects .main-projects-container .project-item:hover > .img {
+  transform: scale(1.05);
+}
+
 @media screen and (max-width: 768px) {
   .container {
     padding: 20px;
@@ -329,6 +385,13 @@ ul {
     flex-basis: 100%;
   }
   .modules .container .modules-wrapper .modules-main-content .modules-content {
+    flex-basis: 100%;
+  }
+  .projects .container .main-projects .main-projects-container {
+    width: 100%;
+    min-height: 370px;
+  }
+  .projects .container .main-projects .main-projects-container .project-item {
     flex-basis: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
