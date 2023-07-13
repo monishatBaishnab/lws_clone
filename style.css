@@ -294,6 +294,11 @@ ul {
   z-index: -1;
 }
 
+.projects {
+  background: rgb(248, 250, 252);
+  border-top: 1px solid rgba(71, 85, 105, 0.1);
+  border-bottom: 1px solid rgba(71, 85, 105, 0.1);
+}
 .projects .container .main-projects {
   margin-top: 60px;
 }
