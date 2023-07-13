@@ -328,12 +328,22 @@ ul {
   transform: scale(1.05);
 }
 
-.progres .container .main-progres .main-progres-container .progres-i .progres-item .progres-nm {
+.progres .container .main-progres .main-progres-container .progres-i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4%;
+  position: relative;
+}
+.progres .container .main-progres .main-progres-container .progres-i .progres-item-text {
+  flex-basis: 48%;
+}
+.progres .container .main-progres .main-progres-container .progres-i .progres-item-text .progres-nm {
   width: 150px;
   height: auto;
   position: relative;
 }
-.progres .container .main-progres .main-progres-container .progres-i .progres-item .progres-nm span {
+.progres .container .main-progres .main-progres-container .progres-i .progres-item-text .progres-nm > span {
   position: absolute;
   left: 0;
   top: 0;
@@ -347,16 +357,30 @@ ul {
   font-weight: 700;
   color: #FFF;
   text-shadow: 3px 3px 0px #1e293b;
+  z-index: 1;
 }
-.progres .container .main-progres .main-progres-container .progres-i .progres-item .progres-nm .nm-img {
+.progres .container .main-progres .main-progres-container .progres-i .progres-item-text .progres-nm .nm-img {
   width: 100%;
   height: 100%;
-}
-.progres .container .main-progres .main-progres-container .progres-i .progres-item .progres-nm .nm-img .img {
-  width: 100%;
-  height: 100%;
+  display: inline-block;
   opacity: 0.5;
-  z-index: -1;
+}
+.progres .container .main-progres .main-progres-container .progres-i .progres-item-text .progres-nm .nm-img .img {
+  width: 100%;
+  height: 100%;
+}
+.progres .container .main-progres .main-progres-container .progres-i .progres-item-text .progres-title {
+  font-size: 27px;
+  color: rgb(15, 23, 42) !important;
+  font-weight: 700;
+  margin: 20px 0;
+}
+.progres .container .main-progres .main-progres-container .progres-i .progres-item-text .progres-subtitle {
+  font-size: 18px;
+  color: rgb(51, 65, 85) !important;
+}
+.progres .container .main-progres .main-progres-container .progres-i .prg-img {
+  flex-basis: 48%;
 }
 
 @media screen and (max-width: 1024px) {
