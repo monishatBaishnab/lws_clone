@@ -339,7 +339,7 @@ ul {
   flex-basis: 48%;
 }
 .progres .container .main-progres .main-progres-container .progres-i .progres-item-text .progres-nm {
-  width: 150px;
+  width: 100px;
   height: auto;
   position: relative;
 }
@@ -381,6 +381,12 @@ ul {
 }
 .progres .container .main-progres .main-progres-container .progres-i .prg-img {
   flex-basis: 48%;
+  width: 100%;
+  height: 100%;
+}
+.progres .container .main-progres .main-progres-container .progres-i .prg-img img {
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -453,5 +459,20 @@ ul {
   }
   .projects .container .main-projects .main-projects-container .project-item {
     flex-basis: 100%;
+  }
+  .progres .container .main-progres .main-progres-container .progres-i .progres-item-text {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .progres .container .main-progres .main-progres-container .progres-i .progres-item-text .progres-nm {
+    margin: 0 auto;
+  }
+  .progres .container .main-progres .main-progres-container .progres-i .progres-item-text .progres-subtitle {
+    font-size: 16px;
+    text-align: justify;
+  }
+  .progres .container .main-progres .main-progres-container .progres-i .prg-img {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

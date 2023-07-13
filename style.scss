@@ -104,7 +104,7 @@ ul {
             background: #fff;
             border: 1px solid rgba(71, 85, 105, .1);
             border-radius: 10px;
-            box-shadow: 0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, .1), 0 8px 10px -6px rgba(0, 0, 0, .1);
 
             .inner-features {
                 display: flex;
@@ -237,6 +237,7 @@ ul {
                     .modules-content-scroller {
                         height: 350px;
                         width: 100%;
+
                         .modules-content-item {
                             gap: 30px;
                             position: relative;
@@ -262,6 +263,7 @@ ul {
 
                             .module-item-content {
                                 margin-left: 35px;
+
                                 .item-title {
                                     font-size: 18px;
                                     color: $black;
@@ -330,34 +332,38 @@ ul {
 }
 
 // projects section style
-.projects{
+.projects {
     background: rgb(248 250 252);
-    border-top: 1px solid rgba(71,85,105,.1);
-    border-bottom: 1px solid rgba(71,85,105,.1);
-    .container{
-        .main-projects{
+    border-top: 1px solid rgba(71, 85, 105, .1);
+    border-bottom: 1px solid rgba(71, 85, 105, .1);
+
+    .container {
+        .main-projects {
             margin-top: 60px;
-            .main-projects-container{
+
+            .main-projects-container {
                 width: 100%;
                 height: auto;
                 display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
                 gap: 10px;
-                
-                .project-item{
+
+                .project-item {
                     flex-basis: calc(50% - 5px);
                     width: 100%;
                     height: 100%;
                     overflow: hidden;
                     border-radius: 10px;
-                    >.img{
+
+                    >.img {
                         width: 100%;
                         height: 100%;
                         margin-bottom: -8px;
                         transition: .3s all;
                     }
-                    .inner-project-container{
+
+                    .inner-project-container {
                         width: 100%;
                         height: auto;
                         display: flex;
@@ -365,30 +371,33 @@ ul {
                         justify-content: center;
                         flex-wrap: wrap;
                         gap: 10px;
-                        .inner-project-item{ 
+
+                        .inner-project-item {
                             flex-basis: calc(50% - 5px);
                             width: 100%;
                             height: 100%;
                             vertical-align: middle;
                             overflow: hidden;
                             border-radius: 10px;
-                            >.img{
+
+                            >.img {
                                 width: 100%;
                                 height: 100%;
                                 object-fit: cover;
                                 margin-bottom: -8px;
                                 transition: .3s all;
                             }
-                            &:hover{
-                                .img{
+
+                            &:hover {
+                                .img {
                                     transform: scale(1.05);
                                 }
                             }
                         }
                     }
-                    
-                    &:hover{
-                        >.img{
+
+                    &:hover {
+                        >.img {
                             transform: scale(1.05);
                         }
                     }
@@ -400,23 +409,26 @@ ul {
 
 // progress section style
 
-.progres{
-    .container{
-        .main-progres{
-            .main-progres-container{
-                .progres-i{
+.progres {
+    .container {
+        .main-progres {
+            .main-progres-container {
+                .progres-i {
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     gap: 4%;
                     position: relative;
-                    .progres-item-text{
+
+                    .progres-item-text {
                         flex-basis: 48%;
-                        .progres-nm{
-                            width: 150px;
+
+                        .progres-nm {
+                            width: 100px;
                             height: auto;
                             position: relative;
-                            >span{
+
+                            >span {
                                 position: absolute;
                                 left: 0;
                                 top: 0;
@@ -429,34 +441,46 @@ ul {
                                 font-size: 50px;
                                 font-weight: 700;
                                 color: #FFF;
-                                text-shadow:3px 3px 0px #1e293b;
+                                text-shadow: 3px 3px 0px #1e293b;
                                 z-index: 1;
                             }
-                            .nm-img{
+
+                            .nm-img {
                                 width: 100%;
                                 height: 100%;
                                 display: inline-block;
                                 opacity: .5;
-                                .img{
+
+                                .img {
                                     width: 100%;
                                     height: 100%;
                                 }
                             }
                         }
-                        .progres-title{
+
+                        .progres-title {
                             font-size: 27px;
                             color: $black;
                             font-weight: 700;
                             margin: 20px 0;
                         }
-                        .progres-subtitle{
+
+                        .progres-subtitle {
                             font-size: 18px;
                             color: $light_dark;
                         }
 
                     }
-                    .prg-img{
+
+                    .prg-img {
                         flex-basis: 48%;
+                        width: 100%;
+                        height: 100%;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
                     }
                 }
             }
@@ -519,9 +543,10 @@ ul {
 
 @media screen and (max-width: 768px) {
 
-    .container{
+    .container {
         padding: 20px;
     }
+
     // feature section
     .features {
         .container {
@@ -529,6 +554,7 @@ ul {
                 margin: 50px 0 0 0;
 
                 padding: 20px;
+
                 .inner-features {
 
                     .feature {
@@ -573,7 +599,7 @@ ul {
                     .modules-img {
                         flex-basis: 100%;
                     }
-    
+
                     .modules-content {
                         flex-basis: 100%;
                     }
@@ -581,21 +607,51 @@ ul {
             }
         }
     }
-    
+
 
     // projects section
-    .projects{
-        .container{
-            .main-projects{
-                .main-projects-container{
+    .projects {
+        .container {
+            .main-projects {
+                .main-projects-container {
                     width: 100%;
                     min-height: 370px;
-                    
-                    .project-item{
+
+                    .project-item {
                         flex-basis: 100%;
                     }
                 }
             }
         }
     }
+
+    // progres section
+
+    .progres {
+        .container {
+            .main-progres {
+                .main-progres-container {
+                    .progres-i {
+                        .progres-item-text {
+                            flex-basis: 100%;
+                            text-align: center;
+                            margin-top: 20px;
+                            .progres-nm {
+                                margin: 0 auto;
+                            }
+                            .progres-subtitle {
+                                font-size: 16px;
+                                text-align: justify;
+                            }
+                        }
+
+                        .prg-img {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
